@@ -1,0 +1,66 @@
+$DarkerSeaGreen : #2a7d4f;
+$LightGray : #111111;
+
+h1 {
+}
+
+.green {
+  background-color: MediumSeaGreen;
+}
+
+.jumbotron {
+  margin-bottom: 0px;}
+
+.container {
+  margin-top: 30px;
+}
+
+tr.tableHead {
+  background-color: MediumSeaGreen;
+  &:hover {
+    background-color: $DarkerSeaGreen;
+  }
+}
+
+tr.tableRow {
+  background-color: white;
+  &:hover {
+    background-color: LightGray;
+  }
+}
+
+div.centered {
+  h2, .thumbnails, p {
+    text-align:center;
+  }
+}
+
+.thumbnails img {
+  width: 30px;
+  height: 30px;
+}
+
+
+@mixin my-img-style() {
+  text-align:center;
+  border: solid;
+  height: auto;
+}
+
+@media (min-width: 601px){
+  #my-img {
+    @include my-img-style();
+    width: 100%;
+  }
+}
+@media (max-width: 600px){
+  #my-img {
+    @include my-img-style();
+    width: 50%;
+  }
+}
+
+footer {
+  margin-top : 20px;
+  padding: 20px;
+}
