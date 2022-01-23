@@ -52,51 +52,6 @@ div.centered h2, div.centered .thumbnails, div.centered p {
   width: 30px;
   height: 30px; }
 
-@media (min-width: 601px) {
-  #my-img {
-    text-align: center;
-    border: solid;
-    height: auto;
-    width: 100%; } }
-@media (max-width: 600px) {
-  #my-img {
-    text-align: center;
-    border: solid;
-    height: auto;
-    width: 50%; 
-  }
-}
-@media screen and (max-width: 1500px) {
-  .content-wrap {
-    padding-bottom: 350px;
-  }
-}
-@media screen and (max-width: 600px) {
-  /*not working*/
-.column-3 {
-    float: left;
-    width: 98%;
-    color: white;
-    background-color: #23395d;
-    margin-left: 1%;
-    display: inline;
-    text-align: center;
-  }
-  .content-wrap {
-    padding-bottom: 500px;
-  }
-  @media screen and (max-width: 500px) {
-    .content-wrap {
-      padding-bottom: 600px;
-    }
-  }
-  @media screen and (max-width: 400px) {
-    .content-wrap {
-      padding-bottom: 700px;
-    }
-  }
-}
-
 /*# sourceMappingURL=style.css.map */
 
 .responsive {
@@ -248,6 +203,7 @@ div.centered h2, div.centered .thumbnails, div.centered p {
 
 .our-services-header {
   margin:auto;
+  margin-bottom: 20px;
 }
 
 .dark-card {
@@ -326,3 +282,48 @@ footer p {
   font-family: Calibri, serif;
 }
 /* End footer */
+
+@media (min-width: 601px) {
+  #my-img {
+    text-align: center;
+    border: solid;
+    height: auto;
+    width: 100%; } }
+@media (max-width: 600px) {
+  #my-img {
+    text-align: center;
+    border: solid;
+    height: auto;
+    width: 50%; 
+  }
+}
+@media screen and (max-width: 1500px) {
+  .content-wrap {
+    padding-bottom: 350px;
+  }
+}
+@media screen and (max-width: 600px) {
+  /*not working*/
+.column-3 {
+    float: left;
+    width: 98%;
+    color: white;
+    background-color: #23395d;
+    margin-left: 1%;
+    display: inline;
+    text-align: center;
+  }
+  .content-wrap {
+    padding-bottom: 500px;
+  }
+}
+  @media screen and (max-width: 500px) {
+    .content-wrap {
+      padding-bottom: 600px;
+    }
+  }
+  @media screen and (max-width: 400px) {
+    .content-wrap {
+      padding-bottom: 700px;
+    }
+  }
