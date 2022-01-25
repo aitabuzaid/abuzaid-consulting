@@ -35,6 +35,10 @@ html, body {
   padding-bottom: 250px;
 }
 
+.page-margin-bottom {
+  margin-bottom: 30px;
+}
+
 tr.tableHead {
   background-color: #40E0D0; }
   tr.tableHead:hover {
@@ -115,7 +119,6 @@ div.centered h2, div.centered .thumbnails, div.centered p {
   display: flex;
   background-color: rgb(35, 57, 93, 0.5);
   box-shadow: 0px 6px 8px -10px #ccc, 0px -6px 8px -10px #CCC; 
-  margin-bottom: 30px;
 }
 
 #homePageCarousel {
@@ -323,6 +326,90 @@ footer p {
 }
 /* End footer */
 
+/* Contact us card */
+.contact-us-wrapper {
+  border-radius: 1px;
+  background-color: inherit;
+  margin: auto;
+  margin-bottom: 30px;
+  padding: 30px 10% 30px 10%;
+}
+
+.contact-us-wrapper a {
+  overflow-wrap: break-word;
+}
+
+.contact-us-header {
+  color: white;
+  width: fit-content;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 5px;
+  font-family: serif;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-left: 230px;
+}
+
+.contact-us-component {
+  float: left;
+  display: inline;
+  width: 21%;
+  margin-left: 2%;
+  height: 250px;
+  background-color: aliceblue;
+  color: black;
+  padding-top: 20px;
+  border-radius: 2px;
+  text-align: center;
+}
+
+.contact-us-component-leftmost {
+  margin-left: 5%;
+}
+
+.contact-us-component-icon {
+  color: #23395d;
+}
+
+.contact-us-component-header {
+  font-family: sans-serif;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.contact-us-social {
+  padding: 0;
+  justify-content: center;
+  display: flex;
+  margin: 15px auto 0 auto;
+  list-style-type: none;
+}
+
+.contact-us-social li {
+  padding-left: 0;
+  padding-top: 10px;
+  margin-left: 20px;
+  float: left;
+}
+
+.contact-us-social li a {
+  color: white;
+  background-color: #23395d;
+  padding: 8px;
+  border-radius: 50%;
+}
+
+.contact-us-social li i {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+}
+
+.black {
+  color: black;
+}
+/* End contact us card */
+
 @media (min-width: 601px) {
   #my-img {
     text-align: center;
@@ -341,6 +428,12 @@ footer p {
   .content-wrap {
     padding-bottom: 350px;
   }
+  .contact-us-wrapper {
+    padding: 30px 0 30px 0;
+  }
+  .contact-us-header {
+    margin-left: 70px;
+  }
 }
 @media screen and (max-width: 1100px) {
   .carousel-item-wrapper {
@@ -358,7 +451,19 @@ footer p {
   .white-line {
     width: 80%;
   }
-
+  .contact-us-wrapper {
+    padding: 30px 0 30px 0;
+  }
+  .contact-us-header {
+    margin: 0px 20px 0px 20px;
+    font-size: 1.5rem;
+  }
+  .contact-us-component {
+    width: 47%;
+    height: 220px;
+    margin-bottom: 20px;
+    margin-left: 2%;
+  }  
 }
 @media screen and (max-width: 600px) {
   /*not working*/
@@ -394,6 +499,18 @@ footer p {
   }
   .white-line {
     width: 100%;
+  }
+  .contact-us-header {
+    margin: 0px 20px 0px 20px;
+    font-size: 1.5rem;
+  }
+  .contact-us-component {
+    width: 96%;
+    height: 220px;
+    margin-bottom: 20px;
+  }  
+  .contact-us-component-leftmost {
+    margin-left: 2%;
   }
 }
   @media screen and (max-width: 500px) {
