@@ -3,6 +3,7 @@ html, body {
   height: 100%;
   color: white;
   background-color: #23395d;
+  font-family: Helvetica, Arial, sans-serif;
 }
 
 #index-body::before {  
@@ -320,10 +321,6 @@ footer p {
 .silver {
   color: #CCC;
 }
-
-.calibri_serif {
-  font-family: Calibri, serif;
-}
 /* End footer */
 
 /* Contact us card */
@@ -344,7 +341,6 @@ footer p {
   width: fit-content;
   border-bottom: 1px solid #fff;
   padding-bottom: 5px;
-  font-family: serif;
   font-size: 2rem;
   font-weight: 600;
   margin-left: 230px;
@@ -372,7 +368,6 @@ footer p {
 }
 
 .contact-us-component-header {
-  font-family: sans-serif;
   font-weight: 600;
   margin-bottom: 20px;
 }
