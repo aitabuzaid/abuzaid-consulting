@@ -24,14 +24,12 @@ html, body {
   color: white;
 }
 
-.jumbotron {
-  margin-bottom: 0px; }
-
 .outer-wrap {
   position: relative;
   min-height: 100vh;
 }
 
+/* Padding at the bottom after adding navbar's height */
 .content-wrap {
   padding-bottom: 250px;
 }
@@ -40,29 +38,15 @@ html, body {
   margin-bottom: 30px;
 }
 
-tr.tableHead {
-  background-color: #40E0D0; }
-  tr.tableHead:hover {
-    background-color: #2a7d4f; }
-
-tr.tableRow {
-  background-color: white; }
-  tr.tableRow:hover {
-    background-color: LightGray; }
-
-div.centered h2, div.centered .thumbnails, div.centered p {
-  text-align: center; }
-
-.thumbnails img {
-  width: 30px;
-  height: 30px; }
-
-/*# sourceMappingURL=style.css.map */
-
 .responsive {
   max-width: 100%;
   height: auto;
   vertical-align: middle;
+}
+
+/* 200px is navbar's height */
+.remaining-height {
+  height: calc(100vh - 200px);
 }
 
 /* Navbar */
@@ -80,26 +64,12 @@ div.centered h2, div.centered .thumbnails, div.centered p {
 }
 /* End Navbar*/
 
+/* Carousel*/
 .carousel-indicators li {
   width: 10px;
   height: 10px;
   border-radius: 100%;
 }
-
-/*
-.carousel-background::before {
-  content: "";
-  background-image: url('../assets/images/background.png');
-  opacity: 0.3;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center center;
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-}*/
 
 .carousel-backdrop {
   float: left;
@@ -175,6 +145,12 @@ div.centered h2, div.centered .thumbnails, div.centered p {
   width: 70%;
 }
 
+.our-values-h5 {
+  text-align: left; 
+  font-weight: 600;
+}
+/* End carousel*/
+
 .row {
   margin: 0;
 }
@@ -185,37 +161,10 @@ div.centered h2, div.centered .thumbnails, div.centered p {
   clear: both;
 }
 
-/*
-/* Two column layout 
-.column-2 {
-  float: left;
-  width: 48.5%;
-  display: flex;
-  background-color: #23395d;
-  margin-left: 1%;
-}
-
-.left-column-2 {
-  color: white;
-}
-
-.right-column-2 {
-  text-align: center;
-}
-
-.column-2-item {
-  margin: auto;
-}
-*/
-.remaining-height {
-  height: calc(100vh - 200px);
-}
-
 /* Three column layout */
 .column-3 {
   float: left;
   width: 32%;
-  /*display: flex;*/
   color: white;
   background-color: #23395d;
   margin-left: 1%;
@@ -309,6 +258,14 @@ footer p {
 .silver {
   color: #CCC;
 }
+
+.linkedin-li {
+  margin-right: 20px;
+}
+
+.abuzaid-consulting-copyright {
+  margin-top: 10px;
+}
 /* End footer */
 
 /* Contact us card */
@@ -393,20 +350,6 @@ footer p {
 }
 /* End contact us card */
 
-@media (min-width: 601px) {
-  #my-img {
-    text-align: center;
-    border: solid;
-    height: auto;
-    width: 100%; } }
-@media (max-width: 600px) {
-  #my-img {
-    text-align: center;
-    border: solid;
-    height: auto;
-    width: 50%; 
-  }
-}
 @media screen and (max-width: 1500px) {
   .content-wrap {
     padding-bottom: 350px;
@@ -445,20 +388,12 @@ footer p {
     width: 47%;
     height: 220px;
     margin-bottom: 20px;
-    margin-left: 2%;
-  }  
+  }
 }
 @media screen and (max-width: 600px) {
-  /*not working*/
 .column-3 {
-    float: left;
     width: 98%;
-    color: white;
-    background-color: #23395d;
-    margin-left: 1%;
-    display: inline;
-    text-align: center;
-  }
+  }  
   .content-wrap {
     padding-bottom: 500px;
   }
