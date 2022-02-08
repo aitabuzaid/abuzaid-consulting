@@ -388,6 +388,7 @@ footer p {
     width: 47%;
     height: 220px;
     margin-bottom: 20px;
+    margin-left: 2%;
   }
 }
 @media screen and (max-width: 600px) {
