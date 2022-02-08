@@ -74,7 +74,7 @@ html, body {
 .carousel-backdrop {
   float: left;
   width: 100%; 
-  height: 350px;
+  max-height: 350px;
   display: flex;
   background-color: rgb(35, 57, 93, 0.5);
   box-shadow: 0px 6px 8px -10px #ccc, 0px -6px 8px -10px #CCC; 
@@ -148,6 +148,10 @@ html, body {
 .our-values-h5 {
   text-align: left; 
   font-weight: 600;
+}
+
+.carousel-remaining-height {
+  height: calc(100vh - 220px);
 }
 /* End carousel*/
 
@@ -415,7 +419,7 @@ footer p {
     padding-bottom: 500px;
   }
   .carousel-backdrop {
-    height: 500px;
+    max-height: 500px;
   }
   .carousel-item-wrapper {
     width: 80%;
