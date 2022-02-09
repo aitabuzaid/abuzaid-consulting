@@ -120,7 +120,7 @@ html, body {
 }
 
 .fourth-slide {
-  height: 300px;
+  height: 210px;
 }
 
 .text-justify {
@@ -143,6 +143,8 @@ html, body {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   width: 70%;
+  margin-top: 8px;
+  margin-bottom: 8px;
 }
 
 .our-values-h5 {
@@ -375,9 +377,6 @@ footer p {
   .third-slide {
     height: 90px;
   }
-  .fourth-slide {
-    height: 300px;
-  }
   .white-line {
     width: 80%;
   }
@@ -432,9 +431,6 @@ footer p {
   }
   .third-slide {
     height: 90px;
-  }
-  .fourth-slide {
-    height: 310px;
   }
   .white-line {
     width: 100%;
